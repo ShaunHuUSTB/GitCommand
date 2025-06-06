@@ -8,6 +8,8 @@ git fetch upstream
 2. 创建新分支并关联upstrean
 ```
 git checkout -b new_branch upstream/new_branch
+或者直接
+git checkout new_branch
 ```
 3. 推送新分支到fork仓
 ```
