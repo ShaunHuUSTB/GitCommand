@@ -25,3 +25,9 @@
 1. 生成 RSA 密钥: `ssh-keygen -t rsa -C "your\_email@example.com"`
 2. 拷贝公钥：`/c/Users/YourName/.ssh/id_public`
 3. 代码仓库settings添加SSH Key
+
+# TortoiseGit安装配置
+
+1. 配置git: `C:\Program Files\Git\bin\git.exe`
+2. 配置SSH 客户端：`C:\Program Files\Git\usr\bin\ssh.exe`
+3. 配置diff工具：可默认或自选如beyond compare
