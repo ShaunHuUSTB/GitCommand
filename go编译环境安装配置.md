@@ -14,3 +14,5 @@
 2. 添加安装路径\bin到PATH
 
 # 安装IDE(如Goland)
+1. 导入导出配置(代理，代码样式，构建工具)：Manage IDE Settings -> Export Settings...
+2. 安装插件
