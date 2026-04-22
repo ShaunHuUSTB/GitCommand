@@ -40,3 +40,24 @@
 | Kimi Code CLI | 中文上下文超长、中文友好、国内直连   | 仅支持Kimi模型           | Kimi K2.5          |
 | Qwen Code     | 上下文超长、智能体能力强、多模态     | 市场认知度待提升         | Qwen3.6-Plus       |
 | OpenCode      | 模型完全自由、开源免费               | 能力依赖用户自选模型     | 用户自选           |
+
+## AI开源社区
+
+[魔搭社区 ](https://modelscope.cn/home)(ModelScope)
+
+#### 大模型厂商开放平台
+
+1. [深度求索DeepSeek](https://api-docs.deepseek.com/zh-cn/)
+2. [智普GLM](https://docs.bigmodel.cn/cn/guide/start/introduction)
+3. [月之暗面Kimi](https://platform.kimi.com/docs/overview)
+4. [MiniMax](https://platform.minimaxi.com/docs/guides/models-intro)
+
+#### 大模型开发与应用平台
+
+1. **[阿里云百炼](https://help.aliyun.com/zh/model-studio/what-is-model-studio)**
+2. **[火山方舟](https://www.volcengine.com/docs/82379?lang=zh)**
+3. **[百度千帆](https://cloud.baidu.com/doc/qianfan/s/rmh8khvwu)**
+
+#### Token工厂
+
+[硅基流动](https://docs.siliconflow.cn/cn/userguide/introduction)
