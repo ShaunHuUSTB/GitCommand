@@ -8,11 +8,23 @@
 
 ## 安装
 
-## CCR
+### Git
+
+### Nvm, NodeJs(Npm)
+1. 下载[nvm(Windows)](https://github.com/coreybutler/nvm-windows/releases/), 安装并设置nvm安装路径和nodejs的符号链接路径
+2. 设置加速地址，安装node和npm
+```bash
+nvm node_mirror https://mirrors.huaweicloud.com/nodejs/
+nvm npm_mirror https://mirrors.huaweicloud.com/npm-software/
+nvm install latest
+nvm use latest
+```
+
+### CCR
 
 1. [GitHub仓库](https://github.com/musistudio/claude-code-router)
 
-## CC Switch
+### CC Switch
 
 1. [GitHub仓库](https://github.com/farion1231/cc-switch)
 
