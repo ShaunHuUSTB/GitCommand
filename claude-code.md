@@ -10,7 +10,7 @@
 
 ### Git
 
-### Nvm, NodeJs(Npm)
+### [Nvm, NodeJs(Npm)](https://mirrors.huaweicloud.com/mirrorDetail/5ea14e0f0cbca48259f6e3e0?mirrorName=nodejs&catalog=tool)
 1. 下载[nvm(Windows)](https://github.com/coreybutler/nvm-windows/releases/), 安装并设置nvm安装路径和nodejs的符号链接路径
 2. 设置加速地址，安装node和npm
 ```bash
@@ -18,6 +18,17 @@ nvm node_mirror https://mirrors.huaweicloud.com/nodejs/
 nvm npm_mirror https://mirrors.huaweicloud.com/npm-software/
 nvm install latest
 nvm use latest
+```
+3.设置registry地址
+```
+npm config set registry https://mirrors.huaweicloud.com/npm/
+```
+4.其他(可选)
+```
+npm config list -l
+npm config set strict-ssl false
+npm config set cache ""D:\nodejs\npm-cache"
+npm config set proxy http://proxy-server:8080
 ```
 
 ### CCR
