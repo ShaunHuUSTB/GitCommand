@@ -16,12 +16,17 @@ curl -LsSf https://astral.sh/uv/install.sh | sh
 ```
 
 2. 手动安装
+
 仓库下载zip包解压：https://github.com/astral-sh/uv/releases
 
 ## 配置
 
 1. 全局配置文件路径环境变量
-  UV_CONFIG_FILE = D:\Env\uv\config\uv.toml
+```
+  UV_HOME = D:\Env\uv
+  UV_CONFIG_FILE = %UV_HOME%\config\uv.toml
+  PATH添加%UV_HOME%\bin
+```
 
 2. 全局配置文件
    
@@ -43,11 +48,11 @@ python-install-mirror = "https://github.com/astral-sh/python-build-standalone/re
    
 | 环境变量名 | 作用说明 | 默认值 (参考) | 迁移目录示例 (Windows) |
 | :--- | :--- | :--- | :--- |
-| `UV_INSTALL_DIR` | `uv` 自身的安装目录。<br>控制 `uv.exe` 二进制文件安装在哪里。 | `~/.local/bin`<br>(即用户目录下的 bin) | `D:\Env\uv\bin` |
-| `UV_PYTHON_INSTALL_DIR` | Python 解释器的存储目录。<br>`uv` 下载和管理的 Python 版本（如 cpython-3.12）实体文件存放在这里。 | `~/.local/share/uv/python`<br>(即 AppData 下) | `D:\Env\uv\python` |
-| `UV_PYTHON_BIN_DIR` | Python 可执行文件的软链接目录。<br>用于存放指向上述 Python 版本的快捷方式（如 `python.exe`），方便系统调用。 | `~/.local/bin` | `D:\Env\uv\bin` |
-| `UV_TOOL_DIR` | 第三方工具的存储目录。<br>当你使用 `uv tool install` 时，工具的本体文件（虚拟环境）存放在这里。 | `~/.local/share/uv/tools` | `D:\Env\uv\tools` |
-| `UV_TOOL_BIN_DIR` | 第三方工具的可执行文件目录。<br>工具的可执行文件（如 `ruff.exe`, `httpie.exe`）会链接到这里。 | `~/.local/bin` | `D:\Env\uv\bin` |
+| `UV_INSTALL_DIR` | `uv` 自身的安装目录。<br>控制 `uv.exe` 二进制文件安装在哪里。 | `~/.local/bin`<br>(即用户目录下的 bin) | `%UV_HOME%\bin` |
+| `UV_PYTHON_INSTALL_DIR` | Python 解释器的存储目录。<br>`uv` 下载和管理的 Python 版本（如 cpython-3.12）实体文件存放在这里。 | `~/.local/share/uv/python`<br>(即 AppData 下) | `%UV_HOME%\python` |
+| `UV_PYTHON_BIN_DIR` | Python 可执行文件的软链接目录。<br>用于存放指向上述 Python 版本的快捷方式（如 `python.exe`），方便系统调用。 | `~/.local/bin` | `%UV_HOME%\bin` |
+| `UV_TOOL_DIR` | 第三方工具的存储目录。<br>当你使用 `uv tool install` 时，工具的本体文件（虚拟环境）存放在这里。 | `~/.local/share/uv/tools` | `%UV_HOME%\tools` |
+| `UV_TOOL_BIN_DIR` | 第三方工具的可执行文件目录。<br>工具的可执行文件（如 `ruff.exe`, `httpie.exe`）会链接到这里。 | `~/.local/bin` | `%UV_HOME%\bin` |
 | `UV_INSTALLER_GITHUB_BASE_URL` | `uv` 自身更新的下载源。<br>用于 `uv self update` 命令，指定 GitHub 的基础 URL。 | `https://github.com` | *(此项为 URL 配置)*<br>例如：<br>`https://ghproxy.cn/https://github.com` |
 
 ## 基础版本管理
