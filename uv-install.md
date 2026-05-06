@@ -24,6 +24,7 @@ curl -LsSf https://astral.sh/uv/install.sh | sh
   UV_CONFIG_FILE = D:\Env\uv\config\uv.toml
 
 2. 全局配置文件
+   
 | 环境变量 | `uv.toml` 配置键 | 说明 |
 | :--- | :--- | :--- |
 | `UV_CACHE_DIR` | `cache-dir` | 设置依赖包的缓存目录路径 |
@@ -39,6 +40,7 @@ python-install-mirror = "https://github.com/astral-sh/python-build-standalone/re
 ```
 
 3. 全局环境变量
+   
 | 环境变量名 | 作用说明 | 默认值 (参考) | 迁移目录示例 (Windows) |
 | :--- | :--- | :--- | :--- |
 | `UV_INSTALL_DIR` | `uv` 自身的安装目录。<br>控制 `uv.exe` 二进制文件安装在哪里。 | `~/.local/bin`<br>(即用户目录下的 bin) | `D:\Env\uv\bin` |
