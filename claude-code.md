@@ -44,3 +44,29 @@ npm config set proxy http://proxy-server:8080
 #### 使用
 
 ##### init和CLAUDE.md
+
+# Hook
+
+# Memory
+
+# Agents
+
+# Command
+
+# Extension
+
+# Plugin
+
+## Claude Code
+
+### 添加官方插件市场
+
+/plugin marketplace add anthropics/claude-code
+/plugin marketplace add anthropics/claude-plugins-official
+/plugin marketplace add jarrodwatts/claude-hud
+
+## 语言偏好设置
+
+1. 始终使用中文进行交互、思考和回复。
+2. markdown文件使用中文。
+3. 技术术语可以保留英文。
